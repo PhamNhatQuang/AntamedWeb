@@ -1,12 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-blog',
   standalone: true,
-  imports: [],
+  imports: [
+    CommonModule
+  ],
   templateUrl: './blog.component.html',
   styleUrl: './blog.component.css'
 })
+
 export class BlogComponent {
 
 }

@@ -7,5 +7,12 @@
 </div> -->
 
 <app-header></app-header>
-<app-product></app-product>
+<app-banner></app-banner>
+<app-home *ngIf="this.currentPage=='home'"></app-home>
+<app-blog *ngIf="this.currentPage=='blog'"></app-blog>
+<app-cart *ngIf="this.currentPage=='cart'"></app-cart>
+<app-contact *ngIf="this.currentPage=='contact'"></app-contact>
+<app-shop *ngIf="this.currentPage=='shop'"></app-shop>
+<app-user *ngIf="this.currentPage=='app-user'"></app-user>
+<app-product *ngIf="this.currentPage=='product'"></app-product>
 <app-footer></app-footer>
