@@ -6,13 +6,17 @@
   <input type="text" placeholder="Search..">
 </div> -->
 
-<app-header></app-header>
+<app-header
+  [currPage]="this.currentPage"
+  (onChangePage)="changePage($event)"
+></app-header>
 <app-banner></app-banner>
-<app-home *ngIf="this.currentPage=='home'"></app-home>
-<app-blog *ngIf="this.currentPage=='blog'"></app-blog>
-<app-cart *ngIf="this.currentPage=='cart'"></app-cart>
-<app-contact *ngIf="this.currentPage=='contact'"></app-contact>
-<app-shop *ngIf="this.currentPage=='shop'"></app-shop>
-<app-user *ngIf="this.currentPage=='app-user'"></app-user>
-<app-product *ngIf="this.currentPage=='product'"></app-product>
+<app-home *ngIf="this.currentPage == 'home'"></app-home>
+<app-blog *ngIf="this.currentPage == 'blog'"></app-blog>
+<app-cart *ngIf="this.currentPage == 'cart'"></app-cart>
+<app-contact *ngIf="this.currentPage == 'contact'"></app-contact>
+<app-shop *ngIf="this.currentPage == 'shop'"></app-shop>
+<app-user *ngIf="this.currentPage == 'app-user'"></app-user>
+<app-product *ngIf="this.currentPage == 'product'"></app-product>
+<app-blog-detail *ngIf="this.currentPage == 'blog-detail'"></app-blog-detail>
 <app-footer></app-footer>

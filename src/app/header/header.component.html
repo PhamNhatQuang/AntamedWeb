@@ -8,21 +8,23 @@
     <div class="collapse nav-container" id="navbarsAntamed">
       <ul class="custom-navbar-nav navbar-nav">
         <input class="Search" type="text" placeholder="Tìm kiếm.." />
-        <li><a class="nav-link" href="index.html">Trang Chủ</a></li>
-        <li><a class="nav-link" href="shop.html">Danh Mục</a></li>
-        <li><a class="nav-link" href="product.html">Sản Phẩm</a></li>
-        <li><a class="nav-link" href="about.html">Giới Thiệu</a></li>
-        <li><a class="nav-link" href="services.html">Dịch vụ</a></li>
-        <li><a class="nav-link" href="blog.html">Tin tức</a></li>
-        <li><a class="nav-link" href="contact.html">Liên hệ</a></li>
+        <li><a class="nav-link" (click)="toHome()">Trang Chủ</a></li>
+        <li><a class="nav-link" (click)="toShop()">Danh Mục</a></li>
+        <li><a class="nav-link" (click)="toProduct()">Sản Phẩm</a></li>
+        <li><a class="nav-link" (click)="toAbout()">Giới Thiệu</a></li>
+        <li><a class="nav-link" (click)="toHome()">Dịch vụ</a></li>
+        <li><a class="nav-link" (click)="toBlog()">Tin tức</a></li>
+        <li><a class="nav-link" (click)="toContact()">Liên hệ</a></li>
       </ul>
 
       <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
         <li>
-          <a class="nav-link" href="#"><img src="/images/user.svg" /></a>
+          <a class="nav-link" (click)="toUser()"
+            ><img src="/images/user.svg"
+          /></a>
         </li>
         <li>
-          <a class="nav-link" href="cart.html"
+          <a class="nav-link" (click)="toCart()"
             ><img src="/images/cart.png"
           /></a>
         </li>
