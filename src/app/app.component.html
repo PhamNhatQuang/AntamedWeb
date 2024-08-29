@@ -10,7 +10,6 @@
   [currPage]="this.currentPage"
   (onChangePage)="changePage($event)"
 ></app-header>
-<app-banner></app-banner>
 <app-home *ngIf="this.currentPage == 'home'"></app-home>
 <app-blog *ngIf="this.currentPage == 'blog'"></app-blog>
 <app-cart *ngIf="this.currentPage == 'cart'"></app-cart>
