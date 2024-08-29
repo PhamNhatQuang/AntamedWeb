@@ -37,10 +37,10 @@ import { BlogDetailComponent } from './blog-detail/blog-detail.component';
 })
 export class AppComponent implements OnInit {
   title = 'AntamedWeb';
-  currentPage: string = 'home';
+  currentPage: string = '';
 
   ngOnInit(): void {
-    console.log(this.currentPage);
+    this.currentPage = 'home';
   }
 
   changePage(currPage: any) {
